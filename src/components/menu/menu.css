@@ -1,0 +1,71 @@
+.menu {
+    background-color: #373636;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.site-title {
+    align-content: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.my-span{
+    color: #ffffff;
+    font-weight: bold;
+    align-content: center;
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.logo-iniSesi{
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.toggle {
+    background: #9a9999;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.item{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.item li {
+    margin: 0;
+}
+
+.item a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    align-content: center;
+    margin: 0;
+}
+
+.item a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
