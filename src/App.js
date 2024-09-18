@@ -1,10 +1,12 @@
-import './App.css';
-import Index from './pages/Index'
-export default function App() {
+import Login from "./pages/Login/login";
+import "./App.css";
+
+function App() {
   return (
-    <div>
-      <Index />
+    <div className="App">
+      <Login />
     </div>
   );
 }
 
+export default App;

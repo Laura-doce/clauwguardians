@@ -1,14 +1,16 @@
-import './heroe2.css'
-export default function Heroe2(){
-    return(
-        <div className=''>
-            <section className="hero">
-                <div className="hero-content">
-                    <h1>Mejora su estética</h1>
-                    <p>Descubre lo mejor de nuestros productos y servicios.</p>
-                    <a href="#services" className="cta-button">Conoce más</a>
-                </div>
-            </section>
-        </div>
-    )
+import "./heroe2.css";
+import Mascota1 from "../../pages/img/mascota.jpeg";
+
+export default function Heroe2() {
+  return (
+    <div className="carrusel">
+      <div className="carrusel">
+        <h1>Todo para tu mascota</h1>
+        <p>Descubre nuestras ofertas y servicios exclusivos.</p>
+        <a href="#more" className="cta-button">
+          Conoce más
+        </a>
+      </div>
+    </div>
+  );
 }
