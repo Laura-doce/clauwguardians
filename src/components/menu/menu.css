@@ -1,5 +1,4 @@
 .menu {
-  background-color: #ffffff;
   color: #000000;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
@@ -40,17 +39,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .item li {
   margin: 0;
+  align-content: center;
 }
 
 .item a {
   color: #000000;
   text-decoration: none;
-  padding: 5px 10px;
+
   align-content: center;
   margin: 0;
 }
@@ -58,4 +57,7 @@
 .item a:hover {
   background-color: #999999e3;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
 }

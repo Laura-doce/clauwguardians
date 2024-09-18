@@ -1,62 +1,58 @@
 import "./menu.css";
 import logo from "../../pages/img/logo-dark.png";
+import { Link } from "wouter";
 
 export default function Menu() {
   return (
-    <div>
-      <div className="row">
-        <nav className="navbar navbar-expand-lg menu">
-          <div className="container-fluid">
-            <a className="navbar-brand menu" href="#">
-              <img
-                src={logo}
-                alt=""
-                className="d-inline-block align-text-top logo"
-              />{" "}
-              <h1 className="site-title"> Clauw </h1>{" "}
-              <span className="my-span"> Guardians </span>
-            </a>
-            <button
-              className="navbar-toggler toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div
-              className="collapse navbar-collapse justify-content-end item"
-              id="navbarSupportedContent"
-            >
-              <ul className="justify-content-end item">
-                <li className="nav-item item">
-                  <a
-                    className="nav-link"
-                    aria-current="page"
-                    href="../../pages/Index/index.js"
-                  >
-                    Inicio
-                  </a>
-                </li>
-                <li className="nav-item item">
-                  <a className="nav-link" href="#">
-                    Productos
-                  </a>
-                  <a className="nav-link" href="#">
-                    Servicios
-                  </a>
-                  <a className="nav-link" href="#">
-                    Inicio sesión
-                  </a>
-                </li>
-              </ul>
+    <>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <Link className="navbar-brand menu" to="/">
+            <img
+              src={logo}
+              alt=""
+              className="d-inline-block align-text-top logo"
+            />{" "}
+            <h1 className="site-title"> Clauw </h1>{" "}
+            <span className="my-span"> Guardians </span>
+          </Link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <Link className="nav-link item" aria-current="page" to="/">
+                  Inicio
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link className="nav-link item" href="#">
+                  Productos
+                </Link>
+              </li>
+              <li class="nav-item dropdown">
+                <Link className="nav-link item" href="#">
+                  Servicios
+                </Link>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+              <Link class="btn btn-dark" to="/login">
+                Inicio Sesión
+              </Link>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
+      </nav>
+    </>
   );
 }
